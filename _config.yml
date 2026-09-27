@@ -1,26 +1,24 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
 title: Xyz
-subtitle: 'become a god in a world of my own making'
-description: ''
-keywords: RISC-V, Semiconductor, ASIC, FPGA
+subtitle: RISC-V, FPGA, ASIC
+keywords:
+  - Open Silicon
+  - RISC-V
+  - FPGA
+  - ASIC
+  - EDA
+  - PDK
 author: Wildan FQ
 language: en
-timezone: 'Asia/Jakarta'
+timezone: Asia/Jakarta
 
-# URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com # Ganti dengan domain kamu nanti
+url: https://wildanfq.pages.dev
+
 permalink: :year/:month/:day/:title/
-permalink_defaults:
-pretty_urls:
-  trailing_index: true
-  trailing_html: true
 
-# Directory
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -28,72 +26,66 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: []
 
-# Writing
 new_post_name: :title.md
 default_layout: post
 titlecase: false
+
 external_link:
   enable: true
   field: site
-  exclude: ''
+  exclude: []
+
 filename_case: 0
 render_drafts: false
+future: false
 post_asset_folder: false
 relative_link: false
-future: true
+
 syntax_highlighter: highlight.js
+
 highlight:
-  line_number: true
   auto_detect: false
-  tab_replace: ''
+  line_number: true
+  line_threshold: 0
+  tab_replace: ""
   wrap: true
   hljs: false
+
 prismjs:
   preprocess: true
   line_number: true
-  tab_replace: ''
+  line_threshold: 0
+  tab_replace: ""
 
-# Home page setting
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
-# Category & Tag
 default_category: uncategorized
-category_map:
-tag_map:
+category_map: {}
+tag_map: {}
 
-# Metadata elements
 meta_generator: true
 
-# Date / Time format
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-updated_option: 'mtime'
+updated_option: mtime
 
-# Pagination
 per_page: 10
 pagination_dir: page
 
-# Include / Exclude file(s)
-include:
-exclude:
-ignore:
+include: []
+exclude: []
+ignore: []
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: next
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: '' # Ubah ini sesuai metode deploy kamu (git, dll)
+  type: ""
 
-# Word Count (Untuk menampilkan jumlah kata & waktu baca)
 symbols_count_time:
   symbols: false
   time: true
@@ -104,7 +96,6 @@ symbols_count_time:
   wpm: 275
   suffix: "mins."
 
-# Local Search (Untuk fitur pencarian)
 search:
   path: search.xml
   field: post

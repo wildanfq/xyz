@@ -1,45 +1,18 @@
-# ===============================================================
-# It's recommended to use Alternate Theme Config to configure NexT
-# Modifying this file may result in merge conflict
-# See: https://theme-next.js.org/docs/getting-started/configuration
-# ===============================================================
-
-# ---------------------------------------------------------------
-# Theme Core Configuration Settings
-# ---------------------------------------------------------------
 cache:
   enable: true
 
 minify: false
 
-custom_file_path:
-  #head: source/_data/head.njk
-  #header: source/_data/header.njk
-  #sidebar: source/_data/sidebar.njk
-  #postMeta: source/_data/post-meta.njk
-  #postBodyStart: source/_data/post-body-start.njk
-  #postBodyEnd: source/_data/post-body-end.njk
-  #footer: source/_data/footer.njk
-  #bodyEnd: source/_data/body-end.njk
-  #variable: source/_data/variables.styl
-  #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+custom_file_path: {}
 
-
-# ---------------------------------------------------------------
-# Scheme Settings
-# ---------------------------------------------------------------
 scheme: Gemini
+
 darkmode: true
 
 lightdark:
   enable: false
   check_supports: true
 
-
-# ---------------------------------------------------------------
-# Site Information Settings
-# ---------------------------------------------------------------
 favicon:
   small: /images/favicon-16x16-next.png
   medium: /images/favicon-32x32-next.png
@@ -51,42 +24,23 @@ custom_logo:
 creative_commons:
   license: by-nc-sa
   size: small
-  sidebar: true
+  sidebar: false
   post: false
   language:
 
 open_graph:
   enable: true
-  options:
-    #twitter_card: <twitter:card>
-    #twitter_id: <twitter:creator>
-    #twitter_site: <twitter:site>
-    #twitter_image: <twitter:image>
-    #fb_admins: <fb:admin_id>
-    #fb_app_id: <fb:app_id>
+  options: {}
 
-
-# ---------------------------------------------------------------
-# Menu Settings
-# ---------------------------------------------------------------
 menu:
   home: / || fa fa-home
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   about: /about/ || fa fa-user
-  #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
-  #commonweal: /404/ || fa fa-heartbeat
 
 menu_settings:
   icons: true
   badges: false
 
-
-# ---------------------------------------------------------------
-# Sidebar Settings
-# ---------------------------------------------------------------
 sidebar:
   position: left
   width_expanded: 320
@@ -95,7 +49,6 @@ sidebar:
   padding: 18
   offset: 12
 
-# Avatar (Menggunakan bentuk bulat sesuai permintaan)
 avatar:
   url: /images/avatar.png
   rounded: true
@@ -105,21 +58,16 @@ site_state: true
 
 social:
   GitHub: https://github.com/wildanfq || fab fa-github
-  Twitter: https://twitter.com/wldnfq || fab fa-twitter
   YouTube: https://youtube.com/wildanfq || fab fa-youtube
+  Twitter: https://twitter.com/wldnfq || fab fa-twitter
   Mastodon: https://mastodon.social/@wldnfq || fab fa-mastodon
 
 social_icons:
   enable: true
   icons_only: true
-  transition: false
+  transition: true
 
-links_settings:
-  icon: fa fa-globe
-  layout: block
-
-links:
-  #Title: https://example.com
+links: false
 
 toc:
   enable: true
@@ -128,14 +76,9 @@ toc:
   expand_all: false
   max_depth: 6
 
-
-# ---------------------------------------------------------------
-# Footer Settings
-# ---------------------------------------------------------------
 language_switcher: false
 
 footer:
-  #since: 2021
   icon:
     name: fa fa-heart
     animated: false
@@ -149,24 +92,19 @@ footer:
     gongan_num:
     gongan_icon_url:
 
-
-# ---------------------------------------------------------------
-# Post Settings
-# ---------------------------------------------------------------
 excerpt_description: true
+
 read_more_btn: true
 
-# Post meta display settings
 post_meta:
-  item_text: false   
+  item_text: false
   created_at: true
   updated_at: true
   categories: true
   tags: true
 
-# Post wordcount display settings
 symbols_count_time:
-  separated_meta: false   
+  separated_meta: false
   item_text_total: false
 
 tag_icon: true
@@ -175,17 +113,9 @@ reward_settings:
   enable: false
   animation: false
 
-reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
-  #paypal: /images/paypal.png
-  #bitcoin: /images/bitcoin.png
+reward: {}
 
-follow_me:
-  #Twitter: https://twitter.com/username || fab fa-twitter
-  #Telegram: https://t.me/channel_name || fab fa-telegram
-  #WeChat: /images/wechat_channel.png || fab fa-weixin
-  #RSS: /atom.xml || fa fa-rss
+follow_me: {}
 
 related_posts:
   enable: false
@@ -193,14 +123,10 @@ related_posts:
 
 post_edit:
   enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/
+  url:
 
 post_navigation: left
 
-
-# ---------------------------------------------------------------
-# Custom Page Settings
-# ---------------------------------------------------------------
 tagcloud:
   min: 12
   max: 30
@@ -209,8 +135,8 @@ tagcloud:
   order: 1
 
 calendar:
-  calendar_id: <required>
-  api_key: <required>
+  calendar_id:
+  api_key:
   orderBy: startTime
   showLocation: false
   offsetMax: 72
@@ -219,10 +145,6 @@ calendar:
   singleEvents: true
   maxResults: 250
 
-
-# ---------------------------------------------------------------
-# Misc Theme Settings
-# ---------------------------------------------------------------
 preconnect: false
 
 text_align:
@@ -273,12 +195,8 @@ bookmark:
 
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
+  permalink:
 
-
-# ---------------------------------------------------------------
-# Font Settings (Menggunakan Default sesuai permintaan)
-# ---------------------------------------------------------------
 font:
   enable: false
   host:
@@ -301,23 +219,20 @@ font:
     external: true
     family:
 
-
-# ---------------------------------------------------------------
-# SEO Settings
-# ---------------------------------------------------------------
 index_with_subtitle: false
+
 exturl: false
+
 exturl_icon: true
 
 google_site_verification:
+
 bing_site_verification:
+
 yandex_site_verification:
+
 baidu_site_verification:
 
-
-# ---------------------------------------------------------------
-# Tags Settings
-# ---------------------------------------------------------------
 note:
   style: simple
   icons: false
@@ -342,10 +257,6 @@ mermaid:
 wavedrom:
   enable: false
 
-
-# ---------------------------------------------------------------
-# Math Formulas Render Support
-# ---------------------------------------------------------------
 math:
   every_page: false
   mathjax:
@@ -356,13 +267,12 @@ math:
     enable: false
     copy_tex: false
 
-
-# ---------------------------------------------------------------
-# External Libraries
-# ---------------------------------------------------------------
 pjax: true
+
 fancybox: false
+
 mediumzoom: false
+
 pangu: false
 
 quicklink:
@@ -373,10 +283,6 @@ quicklink:
   timeout: 3000
   priority: true
 
-
-# ---------------------------------------------------------------
-# Animation Settings
-# ---------------------------------------------------------------
 motion:
   enable: true
   async: false
@@ -400,21 +306,12 @@ canvas_ribbon:
   alpha: 0.6
   zIndex: -1
 
-
-# ---------------------------------------------------------------
-# Comments Settings
-# ---------------------------------------------------------------
 comments:
   style: tabs
   active:
   storage: true
   lazyload: false
-  nav:
-    #disqus:
-    #  text: Load Disqus
-    #  order: -1
-    #gitalk:
-    #  order: -2
+  nav: {}
 
 disqus:
   enable: false
@@ -443,31 +340,25 @@ gitalk:
 
 utterances:
   enable: false
-  repo: user-name/repo-name
+  repo:
   issue_term: pathname
   theme: github-light
 
 isso:
 
-
-# ---------------------------------------------------------------
-# Post Widgets & Content Sharing Services
-# ---------------------------------------------------------------
 addtoany:
   enable: false
-  buttons:
+  buttons: []
 
-
-# ---------------------------------------------------------------
-# Statistics and Analytics
-# ---------------------------------------------------------------
 google_analytics:
   tracking_id:
   only_pageview: false
   measure_protocol_api_secret:
 
 baidu_analytics:
+
 cloudflare_analytics:
+
 clarity_analytics:
 
 matomo:
@@ -500,10 +391,6 @@ busuanzi_count:
   post_views: true
   post_views_icon: far fa-eye
 
-
-# ---------------------------------------------------------------
-# Search Services
-# ---------------------------------------------------------------
 algolia_search:
   enable: false
   hits:
@@ -515,10 +402,6 @@ local_search:
   unescape: false
   preload: false
 
-
-# ---------------------------------------------------------------
-# Chat Services
-# ---------------------------------------------------------------
 chat:
   enable: false
   icon: fa fa-comment
@@ -537,15 +420,10 @@ knocket:
   async: true
   identifier:
 
-
-# ---------------------------------------------------------------
-# CDN Settings
-# ---------------------------------------------------------------
 vendors:
   internal: local
   plugins: cdnjs
   custom_cdn_url:
-
-css: css
-js: js
-images: images
+  css: css
+  js: js
+  images: images
