@@ -1,27 +1,24 @@
----
+Halo! Saya **Xyz**, seorang **Microprocessor Engineer**.
 
-title: About
-date: 2026-09-27 20:11:38
----
-
-Halo! Saya **Xyz**.
-
-Saya tertarik pada dunia **semikonduktor**, khususnya pengembangan **SoC berbasis RISC-V**. Fokus saya adalah **microprocessor engineering**, meliputi:
+Saya berfokus pada pengembangan ekosistem **semikonduktor terbuka**, yang mencakup **Open ISA**, **IP**, **EDA**, dan **PDK**.
 
 1. **Architecture**
-   **RISC-V ISA**, processor architecture, dan microarchitecture sebagai dasar perancangan CPU dan SoC.
+   Perancangan **arsitektur prosesor** (khususnya **ISA RISC-V**) dan **mikrostruktur** sebagai dasar perancangan **CPU** dan **SoC**.
 
-2. **Design**
-   Implementasi microarchitecture pada tingkat **RTL (Register-Transfer Level)** menggunakan **Verilog** dan **SystemVerilog**.
+2. **Design**  
+   Implementasi mikrostruktur pada tingkat **RTL (Register-Transfer Level)**.
 
-3. **Verification**
-   **Functional verification** dan **design validation** untuk memastikan implementasi RTL sesuai dengan spesifikasi architecture dan microarchitecture.
+3. **Verification**  
+   **Verifikasi fungsional** dan **validasi desain** untuk memastikan implementasi RTL sesuai dengan spesifikasi arsitektur dan mikrostruktur.
 
-4. **Prototyping**
-   Prototyping dan validasi desain prosesor pada **FPGA** sebelum menuju implementasi **ASIC**.
+4. **Prototyping**  
+   Prototipe dan validasi desain prosesor pada **FPGA** sebelum menuju implementasi **ASIC**.
 
-5. **RTL-to-GDSII**
-   **ASIC implementation** melalui **logic synthesis**, **floorplanning**, **placement**, **clock-tree synthesis (CTS)**, dan **routing** hingga menghasilkan **GDSII**.
+5. **RTL-to-GDSII**  
+   Alur implementasi ASIC yang mencakup **logic synthesis**, **floorplanning**, **placement**, **clock-tree synthesis (CTS)**, dan **routing** hingga menghasilkan **GDSII**.
 
-6. **Software**
-   **C**, **Zig**, dan **Assembly** dalam **RISC-V software stack**, mencakup **compiler**, **firmware**, **SDK**, **kernel**, dan **unikernel** untuk sistem embedded.
+6. **PCB Design**  
+   Perancangan **PCB** untuk mendukung **prosesor/SoC hasil rancangan sendiri**, mencakup **power delivery**, **DDR routing**, **high-speed interface**, **signal & power integrity**, hingga **siap fabrikasi**.
+
+7. **Software**  
+   Pengembangan **kernel/OS** untuk **Single Board Computer** berbasis **Linux** atau **Android**, mulai dari **firmware**, **bootloader**, hingga **custom kernel**.
